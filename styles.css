@@ -139,12 +139,9 @@ button, input, select{
 }
 
 input:focus{
-    border: 2px solid blue;
+    border: 2px solid green; /* how do i change border color when focused?*/
 }
 
-input[type='password']::error {
-    border: 2px solid red;
-}
 .form {
     flex-direction: column;
     background-color: white;
