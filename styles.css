@@ -66,7 +66,6 @@ main {
     height: 100vh;
     max-width: 40vw;
     position: relative;
-    border: 2px solid red;
     overflow: hidden;
 }
 
@@ -75,6 +74,7 @@ main {
     height: auto;
     min-width: 10rem;
     overflow: hidden;
+    
 }
 
 img {
@@ -107,7 +107,6 @@ img {
 }
 
 .right {
-    border: 2px solid blue;
     position: relative;
     overflow: visible;
     background-color: white;
@@ -136,10 +135,11 @@ button, input, select{
     height: 1.5rem;
     border-radius: 4px;
     border: 2px solid #E5E7EB;
+    outline: none; /* allows for colored borders when focused*/
 }
 
 input:focus{
-    border: 2px solid green; /* how do i change border color when focused?*/
+    border: 2px solid blue;
 }
 
 .form {
@@ -147,7 +147,7 @@ input:focus{
     background-color: white;
     height: 15rem;
     box-shadow: 0px 5px 15px gray;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .form > .wrapper {
     padding: 0;
@@ -190,3 +190,9 @@ button {
 .right .wrapper > p > a {
     color: olive;
 }
+
+/* @media min-length: 871px { make banner on top, form on bottom when screen smaller
+    main {
+        flex-direction: column;
+    }
+} */
